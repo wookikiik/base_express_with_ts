@@ -1,0 +1,27 @@
+{
+  "name": "base_express_with_typescript",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --watch src --delay 2 --exec 'ts-node' src/app",
+    "stop": "lsof -ti :3000 | xargs kill"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.5",
+    "@types/errorhandler": "^1.5.0",
+    "@types/express": "^4.17.1",
+    "@types/method-override": "^0.0.31",
+    "@types/morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1"
+  }
+}
